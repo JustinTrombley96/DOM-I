@@ -37,6 +37,58 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo. Start down below
+// Section 1
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+let nav = document.getElementsByTagName("a");
+nav[0].textContent = siteContent["nav"]["nav-item-1"]
+nav[1].textContent = siteContent["nav"]["nav-item-2"]
+nav[2].textContent = siteContent["nav"]["nav-item-3"]
+nav[3].textContent = siteContent["nav"]["nav-item-4"]
+nav[4].textContent = siteContent["nav"]["nav-item-5"]
+nav[5].textContent = siteContent["nav"]["nav-item-6"]
+
+
+
+// Section 2
+let cta = document.getElementsByTagName("h1");
+cta[0].textContent = siteContent["cta"]["h1"];
+
+let button1 = document.getElementsByTagName("button")
+button1[0].textContent = siteContent["cta"]["button"];
+//const topButton = document.querySelector("button");
+//topButton.textContent = "Get Started";
+
+let img1 = document.getElementById("cta-img")
+img1.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//Section 3
+let headerH4 = document.querySelectorAll("h4")
+headerH4[0].textContent = siteContent["main-content"]["features-h4"]
+headerH4[1].textContent = siteContent["main-content"]["about-h4"]
+headerH4[2].textContent = siteContent["main-content"]["services-h4"]
+headerH4[3].textContent = siteContent["main-content"]["product-h4"]
+headerH4[4].textContent = siteContent["main-content"]["vision-h4"]
+headerH4[5].textContent = siteContent["contact"]["contact-h4"]
+
+
+let pText = document.querySelectorAll("p")
+pText[0].textContent = siteContent["main-content"]["features-content"]
+pText[1].textContent = siteContent["main-content"]["about-content"]
+pText[2].textContent = siteContent["main-content"]["services-content"]
+pText[3].textContent = siteContent["main-content"]["product-content"]
+pText[4].textContent = siteContent["main-content"]["vision-content"]
+pText[5].textContent = siteContent["contact"]["address"]
+pText[6].textContent = siteContent["contact"]["phone"]
+pText[7].textContent = siteContent["contact"]["email"]
+pText[8].textContent = siteContent["footer"]["copyright"]
+
+
+
+
+let midImg = document.getElementById("middle-img")
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const newNavItem = document.createElement('a');
+newNavItem = "Scream Kings";
+document.querySelector('nav').appendChild(newNavItem);

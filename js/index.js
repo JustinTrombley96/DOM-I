@@ -89,6 +89,22 @@ pText[8].textContent = siteContent["footer"]["copyright"]
 let midImg = document.getElementById("middle-img")
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
+//Append and Prepend
+
 const newNavItem = document.createElement('a');
-newNavItem = "Scream Kings";
+newNavItem.textContent = "Scream Kings";
 document.querySelector('nav').appendChild(newNavItem);
+
+const newNavItem2 = document.createElement('a');
+newNavItem2.textContent = "Master of the Macabre";
+document.querySelector('nav').prepend(newNavItem2);
+
+//Change the color Nav
+nav[0].style.color = "Green"
+nav[1].style.color = "Red"
+nav[2].style.color = "Blue"
+nav[3].style.color = "Orange"
+nav[4].style.color = "lime"
+nav[5].style.color = "Black"
+nav[6].style.color = "Crimson"
+nav[7].style.color = "Pink"
